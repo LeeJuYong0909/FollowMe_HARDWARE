@@ -5,16 +5,18 @@ import requests
 import json
 
 #conn = pymysql.connect(
-#        host='192.168.0.8',
-#        user='root',
-#        password='autoset',
-#        db='test',
+#        host='[host value]',
+#        user='[userName]',
+#        password='[password]',
+#        db='[DB name]',
 #        charset='utf8' )
 
+# this is hardcord for test -------------
 scannerID = "1_S004"
-url = 'http://172.26.2.132:3000'
+url = '[IP address]'
 headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
-beaconList = [15013, 15014, 15015]
+beaconList = [List]
+# -----------------------------
 def callback(bt_addr, rssi, packet, additional_info):
     global checkList
     
